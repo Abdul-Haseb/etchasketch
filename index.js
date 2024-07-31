@@ -25,7 +25,7 @@ const createGrid = (size) => {
     //     });
 
     box.addEventListener("mouseover", () => {
-      box.style.backgroundColor = generateRandomColor;
+      box.style.backgroundColor = generateRandomColor();
 
       if (box.style.opacity <= 0.9) {
         box.style.opacity = parseFloat(+box.style.opacity + 0.1);
